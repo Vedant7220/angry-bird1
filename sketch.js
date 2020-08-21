@@ -6,6 +6,7 @@ var engine, world;
 var box1,box2,box3,box4,box5;
 var pig1,pig2;
 var log1,log2,log3,log4;
+var bird1;
 
 function setup(){
     var canvas = createCanvas(1200,400);
@@ -26,6 +27,8 @@ function setup(){
     log3 = new Log(760,120,150,PI/7);
     log4 = new Log(870,120,150,-PI/7);
     box5 = new Box(810,160,70,70);
+
+    bird1 = new Bird(100,100);
 }
 
 function draw(){
@@ -46,4 +49,5 @@ function draw(){
     log3.display();
     log4.display();
     box5.display();
+    bird1.display();
 }
